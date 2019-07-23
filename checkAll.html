@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>全选按钮</title>
+	</head>
+	<body>
+		<table border="1" width="500px" height="800px">
+			<tr>
+				<td><input type="checkbox" onclick="selectAll(this)"/>全选</td>
+				<td>姓名</td>
+				<td>邮箱</td>
+				<td>性别</td>
+				<td>操作	</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="choice"/></td>
+				<td>zhangsan</td>
+				<td>442748083@qq.com</td>
+				<td>男</td>
+				<td>发邮件 	编辑	    放号</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="choice"/></td>
+				<td>zhangsan</td>
+				<td>442748083@qq.com</td>
+				<td>男</td>
+				<td>发邮件 	编辑	    放号</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="choice"/></td>
+				<td>zhangsan</td>
+				<td>442748083@qq.com</td>
+				<td>男</td>
+				<td>发邮件 	编辑	    放号</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name=""choice/></td>
+				<td>zhangsan</td>
+				<td>442748083@qq.com</td>
+				<td>男</td>
+				<td>发邮件 	编辑	    放号</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="choice"/></td>
+				<td>zhangsan</td>
+				<td>442748083@qq.com</td>
+				<td>男</td>
+				<td>发邮件 	编辑	    放号</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="choice"/></td>
+				<td>zhangsan</td>
+				<td>442748083@qq.com</td>
+				<td>男</td>
+				<td>发邮件 	编辑	    放号</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="choice"/></td>
+				<td>zhangsan</td>
+				<td>442748083@qq.com</td>
+				<td>男</td>
+				<td>发邮件 	编辑	    放号</td>
+			</tr>
+		</table>
+	</body>
+	
+	<script type="text/javascript">
+		function selectAll(choiceBtn){
+			var arr=document.getElementsByName("choice");
+			for(var i=0;i<arr.length;i++){
+				arr[i].checked=choiceBtn.checked;
+			}
+		}
+	</script>
+</html>
